@@ -1,4 +1,4 @@
-package com.webapp.todo;
+package com.webapp.todo.service;
 
 import java.util.ArrayList;
 import java.util.List;

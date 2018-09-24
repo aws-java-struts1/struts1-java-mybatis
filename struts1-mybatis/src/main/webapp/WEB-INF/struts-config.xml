@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="loginForm" 
+			type="com.webapp.login.form.LoginForm"/>
+		<form-bean name="todoForm" 
+			type="com.webapp.todo.form.TodoForm"/>
+	</form-beans>
+
+	<action-mappings>
+		<action path="/login"
+			type="com.webapp.login.action.LoginAction"
+			name="loginForm">
+			<forward name="success" path="/list-todos.do"/>
+			<forward name="failure" path="/login/login.jsp"/>
+		</action>
+		<action path="/list-todos"
+			type="com.webapp.todo.action.TodoViewAction"
+			name="todoForm">
+			<forward name="success" path="/todo/list-todos.jsp"/>
+		</action>
+	</action-mappings>
+</struts-config>

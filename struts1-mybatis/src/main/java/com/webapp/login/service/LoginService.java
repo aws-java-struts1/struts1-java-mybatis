@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.webapp.login;
+package com.webapp.login.service;
 
 /**
  * @author FrancisJohn-Munoz

@@ -1,13 +1,14 @@
 /**
  * 
  */
-package com.webapp.todo;
+package com.webapp.todo.form;
 
 /**
  * @author FrancisJohn-Munoz
  *
  */
 public class Todo {
+	
 	private String name;
 	private String category;
 
